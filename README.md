@@ -1,4 +1,4 @@
-# qq-latexmd-bot
+# qq-lenzh-bot
 
 ~~这是一个用于渲染qq中markdown语法和LaTex语法的机器人。至少过去是的~~
 
