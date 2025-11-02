@@ -290,7 +290,7 @@ async def daily_downloader(daily, bot: Bot, event: GroupMessageEvent, args: Mess
                 pass
 
             xor_pdf_path = Path(f"{pdf_path}.xor")
-            comic_name = f"comic_{album_id}_daily_{datetime.date.today()}.xor"
+            comic_name = f"comic_{album_id}_daily_{datetime.date.today()}.pdf.xor"
 
             try:
                 if (xor_pdf_path is None):
@@ -309,7 +309,6 @@ async def daily_downloader(daily, bot: Bot, event: GroupMessageEvent, args: Mess
             # 通过shutil强制删除临时文件夹
             try:
                 shutil.rmtree(download_dir)
-                # xor_pdf_path.unlink(missing_ok=True)
                 await bot.send(f"✅ 清理成功~")
             except Exception as e:
                 await bot.send(event, f"⚠️ 清理临时文件失败 {e}")
