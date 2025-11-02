@@ -12,7 +12,7 @@ help_cmd = on_command("help", aliases={"help"}, priority=5, block=True)
 # /support 指令
 @sup_cmd.handle()
 async def _(args: Message = CommandArg()):
-    await sup_cmd.finish("本插件的源码托管在GitHub: https://github.com/Lenzhzh/qq-lenzh-bot, \n 支持lenzh喵 ~ 打个star喵！")
+    await sup_cmd.finish("本插件的源码托管在GitHub: https://github.com/Lenzhzh/qq_lenzh_bot, \n 支持lenzh喵 ~ 打个star喵！")
 
 # /help 帮助
 @help_cmd.handle()
